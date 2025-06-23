@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Random Person</h1>
+        <nav>
+            <a href="#">Home</a> |
+            <a href="#">News</a> |
+            <a href="#">About</a> |
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section id="profile">
+        <img src="images/profile.jpg" alt="Profile Picture" width="150">
+        <p><strong>Email:</strong> Random.Person@example.com</p>
+        <p><strong>Phone:</strong> +123456789</p>
+    </section>
+
+    <section id="objective">
+        <h2>Career Objective</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li>Software Developer at ABC Corp (2020–Present)</li>
+            <li>Intern at XYZ Inc (2019–2020)</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <table>
+            <tr><th>Institution</th><th>Degree</th><th>Year</th></tr>
+            <tr><td>University A</td><td>B.Sc. Computer Science</td><td>2019</td></tr>
+        </table>
+    </section>
+
+    <section id="awards">
+        <h2>Awards</h2>
+        <ul>
+            <li>Employee of the Year (2022)</li>
+        </ul>
+    </section>
+
+    <section id="references">
+        <h2>References</h2>
+        <p>Available upon request.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Form</h2>
+        <form id="contactForm">
+            <label>Name: <input type="text" id="name"></label><br>
+            <label>Email: <input type="email" id="email"></label><br>
+            <label>Purpose:
+                <select id="purpose">
+                    <option value="">Select</option>
+                    <option value="business">Business</option>
+                    <option value="personal">Personal</option>
+                </select>
+            </label><br>
+            <label>Description: <textarea id="description"></textarea></label><br>
+            <button type="button" onclick="handleSubmit()">Send</button>
+        </form>
+        <div id="errors"></div>
+        <h3>Submitted Data</h3>
+        <table id="dataTable">
+            <tr><th>Name</th><th>Email</th><th>Purpose</th><th>Description</th></tr>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 John Doe</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
